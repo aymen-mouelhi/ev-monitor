@@ -1,0 +1,29 @@
+{
+  "name": "ev-monitor",
+  "version": "1.0.0",
+  "description": "EVlink Charging Stations monitor",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aymen-mouelhi/ev-monitor.git"
+  },
+  "keywords": [
+    "evlink",
+    "ai",
+    "nlp"
+  ],
+  "author": "Aymen Mouelhi <aymen.mouelhi@gmail.com> (https://github.com/aymen-mouelhi)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aymen-mouelhi/ev-monitor/issues"
+  },
+  "homepage": "https://github.com/aymen-mouelhi/ev-monitor#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  }
+}
