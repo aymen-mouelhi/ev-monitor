@@ -22,7 +22,8 @@ app.get('/api', function(req, res) {
 
 app.post('api/messages', function(req, res){
   var input = req.query.input;
-  API.process(input).then(function(reply){
+  var intent = req.query.intent;
+  API.process(input, intent).then(function(reply){
     res.send(reply);
   }).catch(error){
     res.send(error);
