@@ -27,8 +27,7 @@ app.post('api/messages', function(req, res){
   }).catch(error){
     res.send(error);
   }
-})
-
+});
 
 // Spin up the server
 app.listen(app.get('port'), function() {
