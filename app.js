@@ -31,6 +31,10 @@ app.post('/messages', function(req, res){
 
 app.use('/',express.static('./public'));
 
+app.get('/api', function(req, res) {
+    res.send('EVlink Charging Station API');
+});
+
 // Spin up the server
 app.listen(app.get('port'), function() {
     console.log('running on port', app.get('port'));
