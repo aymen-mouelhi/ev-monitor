@@ -13,27 +13,22 @@ app.use(bodyParser.urlencoded({
 
 // Process application/json
 app.use(bodyParser.json());
-/*
-// Index route
-app.get('/', function(req, res) {
-    res.send('Hello, I will help you charge your car');
-});
-
-app.post('/messages', function(req, res){
-  var message = req.query.message;
-  API.process(message).then(function(reply){
-    res.send(reply);
-  }).catch(error){
-    res.send(error);
-  }
-})
-*/
 
 app.use('/',express.static('./public'));
 
 app.get('/api', function(req, res) {
     res.send('EVlink Charging Station API');
 });
+
+app.post('api/messages', function(req, res){
+  var input = req.query.input;
+  API.process(input).then(function(reply){
+    res.send(reply);
+  }).catch(error){
+    res.send(error);
+  }
+})
+
 
 // Spin up the server
 app.listen(app.get('port'), function() {
