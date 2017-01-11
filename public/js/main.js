@@ -109,7 +109,7 @@ function prepareResponse(val) {
   respond(spokenResponse);
   //debugRespond(debugJSON);
 
-  if (val.result.metadata.intentName === 'charge my car') {
+  if (val.result.metadata.intentName === 'charge-my-car') {
     // TODO: Call API
     console.log('API Call for intent [' + val.result.metadata.intentName + ']');
   }
