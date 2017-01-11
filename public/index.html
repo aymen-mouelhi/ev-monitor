@@ -117,7 +117,8 @@
       debugRespond(debugJSON);
 
       if (val.result.metadata.intentName === 'charge my car') {
-        respond('Searching ...');
+        // TODO: Call API
+        console.log('API Call for intent [' + val.result.metadata.intentName + ']');
       }
     }
 
