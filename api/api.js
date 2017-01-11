@@ -16,7 +16,7 @@ module.exports = {
                 case 'place-available':
                     // TODO: API request to know if there are free stations
                     break;
-                case :'time-to-wait':
+                case 'time-to-wait':
                     // TODO: provide info about waiting list
                     break;
                 default:

@@ -25,9 +25,9 @@ app.post('api/messages', function(req, res){
   var intent = req.query.intent;
   API.process(input, intent).then(function(reply){
     res.send(reply);
-  }).catch(error){
+  }).catch(function(error){
     res.send(error);
-  }
+  });
 });
 
 // Spin up the server
